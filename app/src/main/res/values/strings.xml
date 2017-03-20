@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EveryDayWeather</string>
+    <string name="time_second">5s</string>
+    <string name="skip">跳过(%1$ds)</string>
+</resources>

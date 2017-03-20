@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#cce8d3"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+
+    <LinearLayout
+        android:id="@+id/clum_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:id="@+id/ll_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <!-- 排行的圆android:background="@drawable/range_circular" -->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="站点"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="综合指数"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
