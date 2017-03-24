@@ -28,4 +28,5 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.lzy.net:okgo:2.1.4'
+    //滑动隐藏头部局
 }

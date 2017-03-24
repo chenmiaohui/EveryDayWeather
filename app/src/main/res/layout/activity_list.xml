@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-    <TextView
-        android:id="@+id/ll_top"
-        android:layout_width="wrap_content"
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="listlz:"/>
+        android:fitsSystemWindows="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:title="List展示排行"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/actTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#ff0"
+            app:tabTextColor="#ffffff"
+            app:tabIndicatorColor="#00DB00"
+            />
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_below="@+id/ll_top"
         android:id="@+id/recyclerview_horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

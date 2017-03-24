@@ -2,6 +2,7 @@ package weather.hanwei.com.activity;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import weather.hanwei.com.R;
 import weather.hanwei.com.adapter.MyRankingAdapter;
@@ -17,10 +18,13 @@ public class ListViewActivity extends BaseActivity implements listView {
 
     private listPresener listPresener = new listPresener(this);
     private RecyclerView recyclerView;
+    private Toolbar toolbar;
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_list);
         listPresener.loadList();
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("转发来自陈苗辉");
     }
 
     @Override
